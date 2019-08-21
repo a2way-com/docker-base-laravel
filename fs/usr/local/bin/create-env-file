@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+rm -f /app/env.tmp
+
+for VAR in ${LARAVEL_VARS}; do
+    eval "echo $VAR=\${$VAR} >> /app/.env.tmp";
+done
+
+rm -f /app/.env
+mv /app/.env.tmp /app/.env
