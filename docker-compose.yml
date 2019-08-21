@@ -1,0 +1,9 @@
+version: '3'
+services:
+  docker-base-laravel:
+    build: .
+    image: a2way/docker-base-laravel
+    ports:
+      - 8080:80
+    env_file:
+      - ./env/main.env
