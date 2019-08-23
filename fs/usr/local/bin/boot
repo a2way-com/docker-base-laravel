@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
 
-host-user-own-app-dir
 create-env-file
-supervisord -n -j /supervisord.pid
+sudo supervisord -n -j /supervisord.pid

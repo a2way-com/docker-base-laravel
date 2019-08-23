@@ -8,3 +8,4 @@ done
 
 rm -f /app/.env
 mv /app/.env.tmp /app/.env
+chown app:app /app/.env
